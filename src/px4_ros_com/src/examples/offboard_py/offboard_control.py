@@ -28,7 +28,7 @@ class OffboardControl(Node):
         self.vehicle_command_publisher = self.create_publisher(
             VehicleCommand, '/fmu/in/vehicle_command', qos_profile)
 
-        # Create subscribers 
+        # Create subscribers ciao
         self.vehicle_local_position_subscriber = self.create_subscription(
             VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.vehicle_local_position_callback, qos_profile)
         self.vehicle_status_subscriber = self.create_subscription(
