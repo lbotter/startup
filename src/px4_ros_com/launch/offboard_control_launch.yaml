@@ -2,6 +2,7 @@ launch:
 
 - node:
     pkg: "px4_ros_com"
-    exec: "offboard_control"
+    exec: "offboard_control.py"
     name: "offboard_control"
     output: "screen"
+    prefix: "/usr/bin/env python3"
